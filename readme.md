@@ -24,7 +24,7 @@ This project is a Notes Application built with Django for the backend and React 
 Clone the repository:
 
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Rohit10jr/INI8-Labs.git
    ```
 
 ### Backend Setup
