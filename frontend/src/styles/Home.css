@@ -1,0 +1,171 @@
+/* General Container for the Home Page */
+
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+.home-container {
+  font-family: Arial, sans-serif;
+  background:  rgb(255, 255, 255); 
+  height: 100%;
+  /* padding: 20px; */
+  width: 100%;
+  color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e5fbb; /* Darker blue */
+  background-color: #4c70ad;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border-radius: 0;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-btn {
+  background-color: #f0f4f8; /* Soft light background */
+  color: #1e3c72;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  background-color: #1e3c72;
+  color: white;
+}
+
+/* Form Section */
+.form-section {
+  /* background-color: red; */
+  margin-top: 30px;
+  background: linear-gradient(135deg, #5a80c0,  #283449);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 600px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.note-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 93%;
+  /* height: 20; */
+  padding: 10px;
+  font-size: 16px;
+  /* font-weight: 500; */
+  font-family:'Times New Roman', Times, serif;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and Focus for Input Fields */
+.note-form input:focus,
+.note-form textarea:focus {
+  border-color: #66fcf1;
+  box-shadow: 0 0 8px rgba(102, 252, 241, 0.5);
+  outline: none;
+}
+
+.note-form input:hover,
+.note-form textarea:hover {
+  border-color: #66fcf1;
+  box-shadow: 0 0 8px rgba(102, 252, 241, 0.5);
+  outline: none;
+}
+
+.note-form textarea {
+  height: 120px;
+}
+
+.note-form input[type="submit"] {
+  background-color: #66fcf1;
+  color: #1e3c72;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 40%;
+  font-size: 20px;
+}
+
+/* Hover and Active States for Submit Button */
+.note-form input[type="submit"]:hover {
+  background-color: #0056b3;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 86, 179, 0.4);
+}
+
+.note-form input[type="submit"]:active {
+  background-color: #004085;
+  box-shadow: 0 4px 8px rgba(0, 64, 133, 0.4);
+  transform: translateY(2px);
+}
+
+/* Notes Section */
+.notes-section {
+  margin-top: 30px;
+}
+
+.notes-section h2 {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.notes-section h2{
+  color:#004085;
+}
+
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  
+  .nav-title {
+    font-size: 24px;
+  }
+  
+  .nav-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .form-section {
+    padding: 15px;
+    margin: 20px auto;
+  }
+}

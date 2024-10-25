@@ -1,0 +1,24 @@
+# Python-related files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+*.sqlite3
+
+# VSCode and IDE files
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+
+backend/.gitignore
+frontend/.gitignore
